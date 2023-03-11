@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.icons {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(210, 255, 240);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+.social_links {
+    display: flex;
+}
+.social_links a {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color:#000;
+    background-color: rgb(252, 249, 244);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.02);
+    margin: 0 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.fa-brands {
+    position: relative;
+    font-size: 30px;
+    margin: 0 auto;
+    z-index: 10;
+    transition: color 0.5s;
+   
+}
+.social_links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(-45deg,#ed1c94,#ffec17);
+    transition: 0.5s;
+}
+.social_links a:hover::after{
+    top: 0;
+}
+.social_links a:hover .fa-brands{
+    color: white;
+}
+.social_links a:hover {
+    transform: translateY(-10px);
+}
